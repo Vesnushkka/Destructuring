@@ -1,4 +1,4 @@
-const bowman = {
+export const bowman = {
   name: "Лучник",
   type: "Bowman",
   health: 50,
@@ -21,7 +21,7 @@ const bowman = {
   ],
 };
 
-function showCard({special}) {
+export function showCard({special}) {
   const arr = [];
 
   for (let i=0; i < special.length; i++) {
@@ -30,7 +30,7 @@ function showCard({special}) {
     }
     arr.push(special[i]);
   }  
-  return arr;
+  return arr; 
 }
   
 showCard(bowman);
